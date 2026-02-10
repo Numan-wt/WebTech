@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Utilities */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      background: #ddd;
+      color: #333;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #4f46e5;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    nav a {
+      margin-left: 15px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 25px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* About */
+    .about {
+      background: #f3f4f6;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .contact form {
+      margin-top: 20px;
+    }
+
+    .contact input {
+      padding: 10px;
+      width: 250px;
+      max-width: 80%;
+      margin-right: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 600px) {
+      header .container {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>MyBrand</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Build Something Amazing</h2>
+      <p>A simple landing page using HTML and CSS in one file.</p>
+      <a href="#contact" class="btn btn-primary">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container grid">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Lightweight and optimized.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Works on all screen sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Simple</h3>
+        <p>Clean and easy to edit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        This landing page is built with only HTML and CSS,
+        all in one file — perfect for beginners.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 MyBrand</p>
+  </footer>
+
+</body>
+</html>
+
+
