@@ -1,1 +1,2 @@
-This is a Railways Reservation Booking System
+This is a photo responsive gallery.
+
